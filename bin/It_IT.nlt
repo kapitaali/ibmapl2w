@@ -1,0 +1,119 @@
+* National Language Commands and Messages >>> I T A L I A N O (Italy)
+*
+* 5724-B74 Workstation APL2 Version 2.0
+* Licensed Materials - Property of IBM
+* © Copyright IBM Corporation 1991, 2007
+* All Rights Reserved.
+* US Government Users Restricted Rights - Use,
+* duplication or disclosure restricted by GSA ADP
+* Schedule Contract with IBM Corp.
+*
+$1  * Section 1 - System Commands
+*
+'CANCELLA'                                   0 ERASE
+'CONTINUA'                                   1 CONTINUE
+'FINE'                                       2 OFF
+'VAR'                                        3 VARS
+'FUN'                                        4 FNS
+'OPE'                                        5 OPS
+'NOMI'                                       6 NMS
+'ISLN'                                       7 SINL
+'ISE'                                        8 SIS
+'IS'                                         9 SI
+'RESTAURA'                                  10 RESET
+'SVUOTA'                                    11 CLEAR
+'SIMBOLI'                                   12 SYMBOLS
+'LIB'                                       13 LIB
+'IDENTISPA'                                 14 WSID
+'SALVA'                                     15 SAVE
+'CARICA'                                    16 LOAD
+'ELIMINA'                                   17 DROP
+'SCRIVI'                                    18 OUT
+'LEGGI'                                     19 IN
+'PROTELEGGI'                                20 PIN
+'COPIA'                                     21 COPY
+'PROTECOPIA'                                22 PCOPY
+'OSPITE'                                    23 HOST
+'SIC'                                       24 SIC
+'ANCORA'                                    25 MORE
+'EDITORE'                                   26 EDITOR
+*  english too!!
+'ERASE'                                      0 ERASE
+'CONTINUE'                                   1 CONTINUE
+'OFF'                                        2 OFF
+'VARS'                                       3 VARS
+'FNS'                                        4 FNS
+'OPS'                                        5 OPS
+'NMS'                                        6 NMS
+'SINL'                                       7 SINL
+'SIS'                                        8 SIS
+'SI'                                         9 SI
+'RESET'                                     10 RESET
+'CLEAR'                                     11 CLEAR
+'SYMBOLS'                                   12 SYMBOLS
+'LIB'                                       13 LIB
+'WSID'                                      14 WSID
+'SAVE'                                      15 SAVE
+'LOAD'                                      16 LOAD
+'DROP'                                      17 DROP
+'OUT'                                       18 OUT
+'IN'                                        19 IN
+'PIN'                                       20 PIN
+'COPY'                                      21 COPY
+'PCOPY'                                     22 PCOPY
+'HOST'                                      23 HOST
+'SIC'                                       24 SIC
+'MORE'                                      25 MORE
+'EDITOR'                                    26 EDITOR
+*
+$2  * Section 2 - Interpreter Messages
+*
+'INTERRUZIONE'                               1 INTERRUPT
+'DISFUNZIONE DEL SISTEMA'                    2 SYSTEM ERROR
+'SPAZIO DI LAVORO COLMO'                     3 WS FULL
+'RAGGIUNTO IL LIMITE DEL SISTEMA'            4 SYSTEM LIMIT
+'ERRORE DI SINTASSI'                         5 SYNTAX ERROR
+'ERRORE DI VALORE'                           6 VALUE ERROR
+'ê__ ERRORE'                                 7 ê__ ERROR
+'ERRORE DI VALENZA'                          8 VALENCE ERROR
+'ERRORE DI RANGO'                            9 RANK ERROR
+'ERRORE DI CONFORMITA''                     10 LENGTH ERROR
+'ERRORE DI DOMINIO'                         11 DOMAIN ERROR
+'ERRORE DI INDICE'                          12 INDEX ERROR
+'ERRORE DE ASSE'                            13 AXIS ERROR
+'RIFERIMENTO SCORRETTO ALLA LIBRERIA'       14 IMPROPER LIBRARY REFERENCE
+
+'PRECLUSO'                                  16 LOCKED
+'SISTEMA BLOCCATO'                          17 INTERLOCK
+'ERRORE DI DEFINIZIONE'                     18 DEFN ERROR
+'SEGNALAZIONE DI IS'                        19 SI WARNING
+'SPAZIO DI LAVORO VUOTO'                    20 CLEAR WS
+'NON CANCELLATO:'                           21 NOT ERASED:
+'NON TROVATO'                               22 NOT FOUND
+'NON COPIATO:'                              23 NOT COPIED:
+'NON SALVATO'                               24 NOT SAVED
+'COMANDO SCORRETTO'                         25 INCORRECT COMMAND
+'LIBRERIA COLMA'                            26 LIBRARY FULL
+'SPAZIO DI LAVORO IN FORMATO NON VALIDO'    27 WS INVALID
+'(PRIMA) ERA '                              28 WAS
+'MANCATO ACCESSO ALLA LIBRERIA'             29 LIBRARY I/O ERROR
+'SPAZIO DI LAVORO TROPPO GRANDE'            30 WS TOO LARGE
+'TROPPI FILE'                               31 TOO MANY FILES
+'UNITA' NON PRONTA'                         32 UNIT NOT READY
+'UNITA' A SOLA LETTURA'                     33 READ/ONLY UNIT
+'NO MORE INFORMATION'                       34 NO MORE INFORMATION
+'NON SALVATO, QUESTO SPAZIO DI LAVOR E' VUOTO'  35 NOT SAVED/CLEAR
+'NON SALVATO, QUESTO SPAZIO DI LAVOR E' '   36 NOT SAVED/WSID
+'SALVATO '                                  37 SAVED
+*
+$3  * Section 3 - Invocation Messages
+*
+'%1: Unable to read section %2\nof file %3 identified by the -nlt option'        1
+'%1: Invalid value syntax in\n-%2 invocation option or environment variable: %3' 2
+'%1: Unsupported value "%3"\nin -%2 invocation option or environment variable'   3
+'%1: Unable to get %2 bytes of storage for %3'                                   4
+'%1: User ID %2 is already signed on'                                            5
+'%1: Unable to start Shared Variable Processor'                                  6
+'%1: SVP Error %2 Reason %3 during %4 for processor %5'                          7
+'%1: Unexpected %2 error at AOSAPL2+%3(?),\ninterpreter terminating'             8
+'%1: Status dumped to %2'                                                        9

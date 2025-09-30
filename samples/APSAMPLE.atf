@@ -1,0 +1,52 @@
+XNPP 0 10                                                                     ø
+XNIO 0 1                                                                      ø
+XNCT 0 1Eı13                                                                  ø
+XCFC 1 6 .,*0_ı                                                               ø
+XNRL 0 16807                                                                  ø
+XCPR 1 1                                                                      ø
+XCLX 1 5 COIBM                                                                ø
+ CABSTRACT 2 2 62 APsample contains sample Auxiliary Processors written        ø
+Xin APL2.It uses the APSERVER, SVOFFER and ID functions from 1 UTILITY.        ø
+XCCHANGE_ACTIVITY 2 1 40 KOC2192 - Remove local UTILITY functions              ø
+ CCOIBM 2 5 70 Licensed Materials - Property of IBM                            ø
+              5724-B74 Workstation APL2 Version 2.0                            ø
+             (c) Copyright IBM Corporation 1984, 2014 All Rights Reserve       ø
+ d.         US Government Users Restricted Rights - Use, duplication or        ø
+ disclosurerestricted by GSA ADP Schedule Contract with IBM Corp.              ø
+X                                                                              ø
+*(1993 6 18 19 0 0 224)                                                        ø
+ FEXIT555 FX 'EXIT555 SVinfo;N;PID;SVNAME' '(PID SVNAME)½SVinfo'              ø
+X 'N½SVNAME,''207''' '¯N,''½''''CLOSE'''' ''''''''''' 'N½EX N'                ø
+*(1993 6 18 20 0 0 228)                                                        ø
+ FINIT555 FX 'R½INIT555 SVinfo;N;PID;SVNAME' '(PID SVNAME)½SVinfo'            ø
+  '¸(~R½2=Æ207 SVOFFER N½SVNAME,''207'')/0'                                    ø
+  '¯N,''½''''OPEN'''' (0 '''''',(®îID PID),'' '',SVNAME,'''''' '',(®200+       ø
+ ?4æ300),'')''' '¯N,''½''''COLOR'''' ''''CYAN''''''' '¸(R½0=Æ¯N)/0'            ø
+X 'N½EX N'                                                                    ø
+*(1993 6 18 20 0 0 228)                                                        ø
+ FPROC555 FX 'R½SVinfo PROC555 String;N;PID;SVNAME'                           ø
+  '(PID SVNAME)½SVinfo' 'N½SVNAME,''207'''                                     ø
+  '¯N,''½''''MOVE'''' (?2æ150)'''                                              ø
+  '¯N,''½''''WRITE'''' '''''',String,'''''''''                                 ø
+X 'R½îÆ(0=Æ¯N)Ç''OOPS'' ''OK'''                                                ø
+*(1993 6 18 16 0 0 212)                                                        ø
+ FRHO FX 'Reply½SVinfo RHO Request' '(ClientPID SVname)½SVinfo'               ø
+X 'Reply½æRequest'                                                             ø
+*(1993 6 18 16 0 0 212)                                                        ø
+ Fap333 FX 'ap333' 'ä Sample AP using the APSERVER interface'                 ø
+  'ä No special ''init'', ''wait'', or ''exit'' callback routines define       ø
+ d'                                                                            ø
+  'ä for this simple AP - the ''process'' function RHO simply returns'         ø
+  'ä the shape of the APL "command" recieved from the client'                  ø
+X 'APSERVER '''' '''' ''RHO'' '''''                                            ø
+*(1993 6 18 16 0 0 212)                                                        ø
+ Fap444 FX 'ap444' 'ä Echo AP'                                                ø
+  'ä If no ''process'' callback routine supplied, APSERVER will echo req       ø
+Xuest' 'APSERVER '''' '''' '''' '''''                                          ø
+*(1993 6 18 19 0 0 224)                                                        ø
+ Fap555 FX 'ap555'                                                            ø
+  'ä Sample AP using ''init'' and ''exit'' callbacks.  This AP uses AP20       ø
+ 7'                                                                            ø
+  'ä to create a window where client requests are randomly displayed.'         ø
+  'ä Returns ''OK'' if write to window was successful, or ''OOPS'' if no       ø
+Xt.' 'APSERVER ''INIT555'' '''' ''PROC555'' ''EXIT555'''                       ø

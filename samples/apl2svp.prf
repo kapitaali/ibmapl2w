@@ -1,0 +1,133 @@
+***********************************************************************
+* Copyright:   Workstation APL2        Version 2.0
+*              Licensed Materials - Property of IBM
+*              (c) Copyright IBM Corp. 1994, 2002
+***********************************************************************
+*
+* Sample APL2 TCP/IP Profile File
+*
+* There are 2 types of entries in a TCPIP profile:
+*
+* Identification entry (:svopid):
+*   These entries are used to convert the left argument of Quad-SVO
+*   to an extended ID (xid). They are also used to convert an xid
+*   from a remote processor back to a single processor number.
+*
+*   ID entries are required to make an offer to a local processor
+*   dependent on a parent different from the offerer or to make an
+*   offer to a processor on a different machine and/or userid.
+*
+* Authorization entry (:procauth):
+*   These entries are used to authorize remote processors to share
+*   variables with local processors.
+*
+* Any line that starts with an * is a comment.
+*
+* Each data line in a TCP/IP profile file can contain one or more tags
+* and data.  Tag data may not be continued onto new records.  Each entry
+* must begin with an :svopid tag or a :procauth tag. For example:
+*
+*      +--------------------------------------------+
+*      |                                            |
+*      |   * Sample remote processor identification |
+*      |   :svopid.34567                            |
+*      |      :address.abc.vmxt.kiu.edu             |
+*      |      :userid.johndoe                       |
+*      |      :processor.127,23435                  |
+*      |                                            |
+*      |   * Sample local processor identification  |
+*      |   :svopid.34567                            |
+*      |      :processor.127,1002                   |
+*      |                                            |
+*      |   * Sample authorization                   |
+*      |   :procauth.127,23435                      |
+*      |      :rsvopid.34567                        |
+*      |                                            |
+*      +--------------------------------------------+
+*
+*
+* TCP/IP PROFILE TAGS
+*
+* The format of TCP/IP profile tags is as follows:
+*
+* :tag.value
+*
+* where :tag. is chosen from the following set of keywords and
+* identifies the meaning of value.  Tags and their values can be coded
+* in either upper, lower, or mixed case letters.  There are no column
+* dependencies except that asterisks identifying comment records must
+* appear in column 1.  When an :svopid or :procauth tag occurs multiple
+* times in a TCP/IP profile entry, only the first occurrence of the tag
+* is used.
+*
+* :svopid.id    (numeric - 0 to 32767)
+*
+*          The processor ID number specified by the local user in the
+*          left argument of Quad-SVO or the number from which Quad-SVQ
+*          will report offers have arrived.  This tag identifies the
+*          beginning of an identification entry and is required.
+*
+*
+* :address.addr  (domain name, 4 part dotted numeric 1-255, or 0)
+*
+*          The IP address or domain name of potential partner's machine.
+*          An IP address consists of four decimal numbers between 0
+*          and 255 separated by decimal points.  A domain name consists
+*          one name or multiple names separated by decimal points.
+*          An IP address always works if it is a valid address. A domain
+*          name works if the name is known to the domain name server (DNS)
+*          identified in the TCP/IP configuation.  This tag is optional.
+*          The default is the local IP address or 0 if TCP/IP is not
+*          installed.
+*
+
+* :userid.user   (alphanumeric)
+*
+*          The userid of a potential partner with whom you may share
+*          variables. The value must be coded in the correct case.
+*          This tag is optional. The default is the local userid
+*          or 0 if TCP/IP is not installed.
+*
+* :processor.id  (1 to 3 numeric separated by commas)
+*
+*          A processor number and optionally a parent and pparent.
+*
+* :crypt.routine,library
+*
+*          The name of an user exit to be called for encryption and
+*          decryption of shared variable data sent across the network.
+*          The routine must be in a library (DLL on PC systems, module
+*          on Unix systems) and use the following prototype:
+*             long  _System cryptrtn(long encdecflag,
+*                                    char * data,
+*                                    long datalen,
+*                                    char * buffer,
+*                                    long * bufflenp);
+*          A sample routine can be found in source file "svpexit.c"
+*          shipped with APL2.  The sample contains complete documentation
+*          on the parameters and expected results of encryption routines.
+*
+* :procauth.id   (1 to 3 numeric - 1 to 32767 separated by commas or '*')
+*
+*          This entry authorizes one or more remote processors
+*          to share with a local processor. Th id value specifies
+*          the local processor to which shares are being authorized.
+*          An '*' defines authorization for ANY local processor.
+*          This tag identifies the beginning of an authorization
+*          entry and is required.
+*
+*
+* :rsvopid.id   (1 or more numeric separated by commas or '*')
+*
+*          This entry identifies the processors which are authorized
+*          to share with the processor identified by :procauth. Each
+*          number refers to an :svopid entry identifying the authorized
+*          remote processor. An '*' authorizes all processors.
+*
+*
+* :tcpipsrv.id
+*
+*          The port number being used by the TCP/IP port server on the
+*          potential partner's machine.  This tag is optional; it
+*          defaults to 31415.
+*

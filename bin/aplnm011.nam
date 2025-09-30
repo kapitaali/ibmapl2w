@@ -1,0 +1,226 @@
+* Processor 11 NAMES file for external functions distributed with APL2
+* on Windows.
+*
+* Copyright:   5724-B74 Workstation APL2 Version 2.0
+*              Licensed Materials - Property of IBM
+*              © Copyright IBM Corporation 1994, 2013
+*              All Rights Reserved.
+*              US Government Users Restricted Rights - Use,
+*              duplication or disclosure restricted by GSA ADP
+*              Schedule Contract with IBM Corp.
+*
+* All Entries are case sensitive.
+*
+
+:nick.FILE      :link.FUNCTION :lib.apl2xtrn  :proc.FileRead
+                :valence.1 2 0
+                :desc.File read/write, stream model.
+
+:nick.FDELETE   :link.FUNCTION :lib.apl2xtrn  :proc.FileDelete
+                :valence.1 1 0
+                :desc.File delete (to Recycle Bin)
+
+:nick.FSTAT     :link.FUNCTION :lib.apl2xtrn  :proc.FileStat
+                :valence.1 1 0
+                :desc.File status information.
+
+:nick.SCANDIR   :link.FUNCTION :lib.apl2xtrn  :proc.DirList
+                :valence.1 1 0
+                :desc.List files in a directory.
+
+:nick.PFA       :link.FUNCTION :lib.apl2xtrn  :proc.PFA
+                :valence.1 2 0
+                :desc.Pattern from Array
+
+:nick.ATR       :link.FUNCTION :lib.apl2xtrn  :proc.ATR
+                :valence.1 2 0
+                :desc.Array to Record.
+
+:nick.RTA       :link.FUNCTION :lib.apl2xtrn  :proc.RTA
+                :valence.1 2 0
+                :desc.Record to Array.
+
+:nick.CTN       :link.FUNCTION :lib.apl2xtrn  :proc.CTN
+                :valence.1 1 0
+                :desc.Character to Numeric
+
+:nick.GETENV    :link.SYSTEM :lib.apl2xtrn  :proc.GetEnv
+                :valence.1 1 0
+                :rslt.(G4 0)(S1 1 *)
+                :rarg.(G4 0)(S1 1 *)
+                :desc.GETENV (enclose'environment variable')
+                :desc.returns value of the environment variable,
+                :desc.or iota zero if NULL
+
+:nick.SIZEOF    :link.FUNCTION :lib.apl2xtrn  :proc.SIZEOF
+                :valence.1 1 0
+                :desc.Size of storage described by pattern
+
+:nick.RF        :link.FUNCTION :lib.apl2xtrn  :proc.RowFind
+                :valence.1 2 0
+                :desc.Equivalent to
+                :desc.(enclose[1+QuadIO]MATRIX1)iota enclose[1+QuadIO]MATRIX2
+                :desc.MATRIX1 and MATRIX2 must be rank 2 character arrays
+                :desc.that conform along the last axis.
+                :desc.Provides a performance improvement for a common lookup
+                :desc.operation.
+
+:nick.REPLACEX  :link.FUNCTION :lib.apl2xtrn  :proc.REPLACEX
+                :valence.1 2 0
+                :desc.Replace Strings
+
+:nick.ROUNDC    :link.FUNCTION :lib.apl2xtrn :proc.RoundAwayFromZero
+                :valence.1 2 0
+                :desc.Commercial rounding
+
+:nick.MD5       :link.FUNCTION :lib.apl2xtrn  :proc.MD5
+                :valence.1 1 0
+                :desc.RSA Data Security, Inc. MD5 Message-Digest Algorithm
+
+:nick.OPTION    :link.FUNCTION :lib.apl2xtrn  :proc.OPTION
+                :valence.1 2 0
+                :desc.Query/Set Session Options
+
+:nick.BEEP      :link.SYSTEM :lib.apl2xtrn  :proc.xDosBeep
+                :valence.1 1 0
+                :rslt.(I4 0)
+                :rarg.(G0 1 2) (I4 0) (I4 0)
+                :desc.BEEP frequency duration
+                :desc.Sounds a beep
+                :desc.Returns 0 if successful, else system error code
+                :desc.Frequency and duration are not supported on
+                :desc.all systems.  If not supported, they will be ignored.
+
+:nick.KTC       :link.FUNCTION :lib.apl2xtrn  :proc.KTC
+                :valence.1 2 0
+                :desc.Kanji (Shift-JIS) to Character
+
+:nick.CTK       :link.FUNCTION :lib.apl2xtrn  :proc.CTK
+                :valence.1 2 0
+                :desc.Character to Kanji (Shift-JIS)
+
+:nick.CTUTF     :link.FUNCTION :lib.apl2xtrn  :proc.CTUTF
+                :valence.1 2 0
+                :desc.Character to UTF
+
+:nick.UTFTC     :link.FUNCTION :lib.apl2xtrn  :proc.UTFTC
+                :valence.1 2 0
+                :desc.UTF to Character
+
+:nick.ATS       :link.FUNCTION :lib.apl2xtrn  :proc.ATS
+                :valence.1 2 0
+                :desc.Array to SCAR
+
+:nick.STA       :link.FUNCTION :lib.apl2xtrn  :proc.STA
+                :valence.1 2 0
+                :desc.SCAR to Array
+
+:nick.CNS       :link.FUNCTION :lib.apl2xtrn   :proc.CNS
+                :valence.1 2 0
+                :desc.Create NameSpace
+
+:nick.QNS       :link.FUNCTION :lib.apl2xtrn   :proc.QNS
+                :valence.1 1 0
+                :desc.Query NameScope
+
+:nick.EXP       :link.FUNCTION :lib.apl2xtrn   :proc.EXP
+                :valence.1 1 0
+                :desc.EXecute in Previous namescope
+
+:nick.APL2PIA   :link.FUNCTION :lib.apl2xtrn   :proc.APL2PIA
+                :valence.1 2 0
+                :desc.APL2 Programming Interface for APL2
+
+:nick.TCL       :link.FUNCTION :lib.apl2tcl   :proc.TCL
+                :valence.1 2 0
+                :desc.Interface to TCL
+
+:nick.MTL       :link.FUNCTION :lib.apl2tcl   :proc.MTL
+                :valence.1 2 0
+                :desc.APL2 Array to Tcl List
+
+
+:nick.LTM       :link.FUNCTION :lib.apl2tcl   :proc.LTM
+                :valence.1 2 0
+                :desc.Tcl List to APL2 Array
+
+:nick.COM       :link.FUNCTION :lib.apl2vb    :proc.COM
+                :valence.1 2 0
+                :desc.Interface to Microsoft Component Object Model
+
+:nick.SI        :link.FUNCTION :lib.apl2xtrn :proc.QuadSI
+                :valence.1 1 0
+
+:nick.SIS       :link.FUNCTION :lib.apl2xtrn :proc.QuadSIS
+                :valence.1 1 0
+
+:nick.COPY      :link.FUNCTION :lib.apl2xtrd  :proc.ExtCopy
+                :valence.1 1 0
+                :desc.Copy Workspace Objects
+
+:nick.PCOPY     :link.FUNCTION :lib.apl2xtrd  :proc.ExtPCopy
+                :valence.1 1 0
+                :desc.Protected Copy
+
+:nick.LIB       :link.FUNCTION :lib.apl2xtrd  :proc.ExtLib
+                :valence.1 1 0
+                :desc.List Library Contents
+
+:nick.LIBS      :link.FUNCTION :lib.apl2xtrn   :proc.LIBLIST
+                :valence.1 0 0
+                :desc.Get APL2 library definitions
+
+:nick.GETLIB    :link.FUNCTION :lib.apl2xtrn   :proc.GETLIB
+                :valence.1 1 0
+                :desc.Get path associated with library number
+
+:nick.CHECK_ERROR :link.FUNCTION :lib.apl2xtrn  :proc.StrError
+                :valence.1 1 0
+                :desc.Get message text from error number
+
+:nick.CPUCOUNT  :link.SYSTEM   :lib.apl2xtrn  :proc.CPUCOUNT
+                :valence.1 0 0 :rslt.I4 0
+                :desc.Return number of CPU processors
+
+:nick.LEXP      :link.FUNCTION :lib.apl2xtrn :proc.LEXP
+                :valence.1 1 0
+                :desc.Lexically Parse a character vector
+
+* Nicknames for APL2 Namespaces
+:nick.DATATYPE :link.APL :lib.APL2DDT :desc.Array Data Type
+:nick.DISPLAY  :link.APL :lib.APL2DDT :desc.APL2 Array Structures
+:nick.DISPLAYC :link.APL :lib.APL2DDT :desc.APL2 Array Structures
+:nick.DISPLAYG :link.APL :lib.APL2DDT :desc.APL2 Array Structures
+:nick.GMTSTAMP :link.APL :lib.APL2DDT :desc.Get/Set Function Timestamp
+:nick.TIME     :link.APL :lib.APL2DDT :desc.Application Performance Analysis
+
+:nick.PEACHP   :link.APL :lib.APL2PARA :desc.Parallel Each using processors
+:nick.PEACHT   :link.APL :lib.APL2PARA :desc.Parallel Each using threads
+:nick.PEACHXF  :link.FUNCTION :lib.apl2xtrn :proc.PEACHXF :valence.1 2 0
+
+:nick.EDITOR_2 :link.APL :lib.APL2EDT :desc.APL2 Editor 2
+
+:nick.DIR         :link.APL :lib.APL2HST :desc.Get directory listing
+:nick.ERASE       :link.APL :lib.APL2HST :desc.Remove file
+:nick.HOST        :link.APL :lib.APL2HST :desc.Issue system command
+:nick.MKDIR       :link.APL :lib.APL2HST :desc.Create new directory
+:nick.PIPE        :link.APL :lib.APL2HST :desc.Redirect system command
+:nick.RENAME      :link.APL :lib.APL2HST :desc.Rename file
+:nick.RMDIR       :link.APL :lib.APL2HST :desc.Remove directory
+
+:nick.IDIOMS   :link.APL :lib.APL2IDI :desc.APL2 Idiom Library
+:nick.IDIOMSG  :link.APL :lib.APL2IDI :desc.APL2 Idiom Library using Treeview
+
+:nick.PRINTWSG :link.APL :lib.APL2GUI :desc.Print Workspace with GUI interface
+
+:nick.APL2CFG  :link.APL :lib.APL2CFG :desc.Configure APL2
+:nick.APL2LM   :link.APL :lib.APL2LM  :desc.APL2 Library Manager
+:nick.COMBROWSE :link.APL :lib.APL2LM  :desc.COM Browser
+
+:nick.WSCOMP   :link.APL :lib.APL2WSC :desc.Workspace Compare
+
+* Nicknames for APL2 zip utilities
+:nick.ZIP      :link.APL :lib.APL2ZIP :desc.Zip an arbitrary array
+:nick.UNZIP    :link.APL :lib.APL2ZIP :desc.Unzip an array
+:nick.ZIPWS    :link.APL :lib.APL2ZIP :desc.Zip the current workspace
+:nick.UNZIPWS  :link.APL :lib.APL2ZIP :desc.Unzip a workspace

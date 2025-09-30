@@ -1,0 +1,18 @@
+***********************************************************************
+* Copyright:   Workstation APL2        Version 2.0
+*              Licensed Materials - Property of IBM
+*              (c) Copyright IBM Corp. 1994, 2002
+***********************************************************************
+* Sample svp parms file
+*
+* Maximum number of processors signed on
+PROCS=100
+* Maximum number of variables shared
+VARS=400
+* Maximum amount of shared memory for all variable data
+MAXSM=16000000
+* Maximum amount of shared memory for any one shared variable
+MAXSV=12000000
+* processor numbers to omit from the SVP trace
+NOTRACE=1 101 120
+*
