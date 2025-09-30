@@ -2,7 +2,7 @@
 
 Available on their public server https://public.dhe.ibm.com/ps/products/apl2/demos/aplwdemo/
 
-================================================================================
+```
  5724-B74 IBM* Workstation APL2* Version 2.0
  Corrective Service Information for Windows**  (READMEC.TXT)
 
@@ -10,8 +10,7 @@ Available on their public server https://public.dhe.ibm.com/ps/products/apl2/dem
  © Copyright IBM Corporation 1997, 2008 All Rights Reserved.
  US Government Users Restricted Rights - Use, duplication or disclosure
  restricted by GSA ADP Schedule Contract with IBM Corp.
-
-================================================================================
+```
 
 
 ## APL2 for Windows -- Version 2.0  -- Service Level 26 - May 2019
