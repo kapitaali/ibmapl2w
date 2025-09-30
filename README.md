@@ -13,9 +13,9 @@ Available on their public server https://public.dhe.ibm.com/ps/products/apl2/dem
 
 ================================================================================
 
-================================================================================
+
 ## APL2 for Windows -- Version 2.0  -- Service Level 26 - May 2019
-================================================================================
+
 
  To install service to APL2 for Windows:
 
@@ -98,54 +98,48 @@ Available on their public server https://public.dhe.ibm.com/ps/products/apl2/dem
        C code in order to use these files with a C compiler other than
        IBM VisualAge, the adjustments may no longer be necessary.
 
-================================================================================
+
 ## Support for Windows 98 and Windows Me
-================================================================================
 
  Support for Windows 98 and Windows Me was withdrawn in July 2006.
  Service Level 8 was the last APL2 service level that was tested on
  those systems.  Users still running Windows 98 and Windows Me should
  not install APL2 service beyond Service Level 8.
 
-================================================================================
+
 ## Support for Windows 2000
-================================================================================
 
  Support for Windows 2000 was withdrawn in July 2010.
  Service Level 16 was the last APL2 service level to be tested on that
  system.  Users still running Windows 2000 should not install APL2
  service beyond Service Level 16.
 
-================================================================================
+
 ## Support for Windows XP
-================================================================================
 
  Support for Windows XP was withdrawn on April 8, 2014.
  Service Level 21 was the last APL2 service level to be tested on
  that system.  Users still running Windows XP should not install APL2
  service beyond Service Level 21.
 
-================================================================================
+
 ## Support for Windows Vista**
-================================================================================
 
  Support for Windows Vista was withdrawn on April 11, 2017.
  Service Level 23 was the last APL2 service level to be supported
  that system. Users still running Windows Vista should not install APL2
  service beyond Service Level 23.
 
-================================================================================
+
 ## Support for Windows 7
-================================================================================
 
  Support for Windows 7 will be withdrawn in January 2020.
  Service Level 26 is the last APL2 service level to be tested and supported on
  that system.  Users still running Windows 7 should not install APL2
  service beyond Service Level 26.
 
-================================================================================
+
 ## Support for Windows 8
-================================================================================
 
  APL2 has been tested by customers on Windows 8.  No new problems
  have been reported, however all the notes below pertaining to Windows 10
@@ -157,9 +151,8 @@ Available on their public server https://public.dhe.ibm.com/ps/products/apl2/dem
  Otherwise navigation to the APL2 folder to start APL2 may be
  cumbersome.
 
-================================================================================
+
 ## Support for Windows 10
-================================================================================
 
  APL2 has been tested on Windows 10.  One new problem has been reported, with
  display of the APL2 Image font.  A workaround removing internal usage of APL2
@@ -187,9 +180,8 @@ Available on their public server https://public.dhe.ibm.com/ps/products/apl2/dem
     Rexx must be used.
 
 
-================================================================================
+
 ## Changes in Service Level 26
-================================================================================
 
  Interpreter
     KOC2266  Refcount too high after )RESET via AP 101
@@ -202,9 +194,8 @@ Available on their public server https://public.dhe.ibm.com/ps/products/apl2/dem
     KOC2273  Memory leak when AP 101 string longer than max of PW
 
 
-================================================================================
+
 ## Enhancements Added in Previous Version 2.0 Levels
-================================================================================
 
  Namespaces
     The interpreter and Processor 11 have been enhanced to support
@@ -2048,9 +2039,8 @@ Available on their public server https://public.dhe.ibm.com/ps/products/apl2/dem
     KOC2244  Remove Windows Vista from documentation
 
 
-================================================================================
+
 ## Support
-================================================================================
 
  We'd like to hear from you!
 
@@ -2072,9 +2062,8 @@ Available on their public server https://public.dhe.ibm.com/ps/products/apl2/dem
                 USA
 
 
-================================================================================
+
 ## Trademarks
-================================================================================
 
  The following terms are trademarks of the IBM Corporation.  They are
  denoted by an asterisk (*) when they first appear in the text.
